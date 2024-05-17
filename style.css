@@ -604,3 +604,23 @@ main.row{
 		margin-top: 30px;
 	}
 }
+
+.table-container {
+  overflow-x: auto; 
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 10px; 
+    min-width: 320px;
+  }
+  table tr th,
+  table tr td {
+    padding: 6px; 
+  }
+
+  #years {
+    margin-top: -1%;
+    text-align: start;
+  }
+}
