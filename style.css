@@ -72,6 +72,10 @@ a:hover {
   cursor: default;
 }
 
+.profile-pic{
+  border-radius: 6%;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
