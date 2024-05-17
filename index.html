@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav id="desktop-nav">
+        <div class="logo">Ragul TN</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#techstack">Techstack</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Ragul TN</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#techstack" onclick="toggleMenu()">Techstack</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/Media.jpg" alt="John Doe profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Ragul TN</h1>
+          <p class="section__text__p2">Fullstack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/ragulsid/', '_blank')"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="window.open('https://github.com/ragulsid', '_blank')"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/cat.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>1 year <br />Fullstack Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.E (CSE) Bachelors Degree<br />CPGA : 8.9</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Effective Computer Science Engineer aiming to optimize my
+                problem-solving, leadership, and technical skills with a strong
+                self-learning rating to work effectively with the highest
+                potential in a demanding and dynamic environment. I can be
+                counted on to help your organization achieve its goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="techstack">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Tech Stack</h1>
+        <div class="experience-details-container">
+          <div class="table-container">
+            <table>
+              <tr>
+                  <th>Backend Languages</th>
+                  <th><a title="Node.js" href="https://nodejs.org" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40"/></a></th>
+                  <th><a title="Python" href="https://python.org" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="40" height="40"/></a></th>
+                  <th><a title="Java" href="https://www.java.com/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="nodejs" width="40" height="40"/></a></th>
+              </tr>
+              <tr>
+                  <td>Backend Frameworks</td>
+                  <td><a title="Express" href="http://expressjs.com" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="expressjs" width="40" height="40"/></a></td>
+                  <td><a title="SpringBoot" href="https://spring.io/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"" alt="expressjs" width="40" height="40"/></a></td>
+              </tr>
+              <tr>
+                  <td>Frontend Languages</td>
+                  <td><a title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a></td>
+                  <td><a title="HTML" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a></td>
+                  <td><a title="CSS" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a></td>
+              </tr>
+              <tr>
+                  <td>Frontend Frameworks</td>
+                  <td><a title="Angular" href="https://angular.io/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="css3" width="40" height="40"/> </a></td>
+                  <td><a title="SASS" href="https://sass-lang.com/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="css3" width="40" height="40"/> </a></td>
+              </tr>
+              <tr>
+                <td>Databases</td>
+                <td><a title="PostgreSQL" href="https://postgresql.org" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a></td>
+                <td><a title="MySQL" href="https://www.mysql.com/" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="postgresql" width="40" height="40"/> </a></td>
+                <td><a title="MongoDB" href="http://mongodb.com" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a></td>
+              </tr>
+              <tr>
+                <td>Infrastructure</td>
+                <td><a title="Docker" href="https://docker.com" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/> </a></td>
+                <td><a title="Nginx" href="https://nginx.com" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a></td>
+                <td><a title="Microsoft Azure" href="https://azure.microsoft.com" target="_blank"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="azure" width="40" height="40"/> </a></td>
+              </tr>
+          </table>
+          
+        </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="exp-containers">
+            <section class="col">      
+              <div class="contents">
+                
+                <div class="box">
+                  <img src="https://brimmatech.com/wp-content/uploads/2023/02/cropped-Layer-1@3x.png" alt="nodejs" height="20px"/>
+                  <h4 id="years">June 2023 - present</h4>
+                  <h3>DevOps Engineer</h3>
+                  <h4>Skills: Azure, On-prem</h4>
+                  <p>
+                    <li>Utilizing Azure DevOps for streamlined project management, version control, CI/CD pipelines.</li>
+                    <li>Migrating Azure Services to server on-premises server.</li>
+                    <li>Writing pipelines for FE and BE applications in Gitlab.</li>
+                    <li>Managing On-Prem server with pre-hooks and Sentry for efficient deployments.</li>
+                    <li>Maintaining Linux Administration and DB owning of the server.</li>
+                  </p> 
+                </div>
+        
+                <div class="box">
+                  <img src="https://brimmatech.com/wp-content/uploads/2023/02/cropped-Layer-1@3x.png" alt="nodejs" height="20px"/>
+                  <h4 id="years">June 2023 - present</h4>
+                  <h3>Frontend Developer</h3>
+                  <h4>Skills: Angular, Typescript, Ionic</h4>
+                  <p>
+                    <li>Working extensively with Angular CLI for creating components.</li>
+                    <li>Creating services, pipes, Directives, and libraries using mono repo [NgRx] single app.</li>
+                    <li>Functioning with Angular CLI to create components, Services, pipes, Directives.</li>
+                    <li>Developing high-quality, responsive web interfaces with HTML, CSS, and JavaScript.</li>
+                    <li>Ensuring that web applications are optimized for speed, scalability, and security.</li>
+                  </p> 
+                </div>
+        
+                <div class="box">
+                  <img src="./assets/cureyalogo.png" alt="nodejs" height="20px"/>
+                  <h4 id="years">June 2021</h4>
+                  <h3>AI/ML Intern</h3>
+                  <h4>Skills: Python, Colab</h4>
+                  <p>
+                    <li>Demonstrating proficiency in statistical analysis of data.</li>
+                    <li>Developing skills to build and assess data-based models.</li>
+                    <li>Demonstrating proficiency in data management.</li>
+                    <li>Creating ML Pipeline to correlating data into a model and analysed to achieve outputs.</li>
+                    <li>Internship certificate
+                      <a href="https://drive.google.com/file/d/1hGWbHJCySxOYWdXfQMHOg0ZRzfOnPAY6/view?usp=sharing" target="_blank">
+                       <img src="/assets/external-link-icon.png" height="15"></a>
+                    </li></li>
+                  </p> 
+                </div>
+        
+              </div>
+            </section>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="certifications">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Certifications & Honors</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="cert-details-container">
+              <h2 class="experience-sub-title">Certifications</h2>
+              <div class="certification-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Angular (Basic)</h3>
+                    <p>
+                      <li>Completed Angular Certification in HackerRank 
+                        <a href="https://www.hackerrank.com/certificates/8aec7433ede9" target="_blank">
+                         <img src="/assets/external-link-icon.png" height="15"></a>
+                      </li>
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AWS Serverless Development</h3>
+                    <p>
+                      <li>Completed AWS Serverless Development from Amazon
+                        <a href="https://drive.google.com/file/d/1lqc2dpVLOD1DFP9e-k80RDGwod4pTzM-/view?usp=sharing" target="_blank">
+                         <img src="/assets/external-link-icon.png" height="15"></a>
+                      </li>
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Career Edge - TCS</h3>
+                    <p>
+                      <li>Completed Career Edge course offered by TCS ION
+                        <a href="https://drive.google.com/file/d/1MDc3Qf3ukucsmHqpkThN1lUfrss7xVm-/view?usp=sharing" target="_blank">
+                         <img src="/assets/external-link-icon.png" height="15"></a>
+                      </li>
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="cert-details-container">
+              <h2 class="experience-sub-title">Honors</h2>
+              <div class="certification-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Club President</h3>
+                    <p>
+                      <li>President in Reader's Park in our college.</li>
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AWS UG Madurai - Discord Server Mod</h3>
+                    <p>
+                      <li>Been a part of AWS UG Madurai as Discord Server Mod</li>
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Top 10 in TechGig Cloud DevJam</h3>
+                    <p>
+                      <li>Ranked 7th in DevJam among 13,000+ participants
+                        <a href="https://www.linkedin.com/posts/ragulsid_cloudjam-techgig-googlecloud-activity-6828263795547361281-uV5J/?utm_source=share&utm_medium=member_desktop" target="_blank">
+                         <img src="/assets/external-link-icon.png" height="15"></a>
+                      </li>
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Find your Hotel</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/RagulSid/find-your-hotel', '_blank'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/RagulSid/find-your-hotel', '_blank'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Receipe Maker</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/RagulSid/Food-Api-Project'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://ragulsid.github.io/Food-Api-Project/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Python Projects</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/RagulSid/python-mini-projects'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/RagulSid/python-mini-projects'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">ragulsiddharth1@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/ragulsid/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
